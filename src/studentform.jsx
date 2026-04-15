@@ -1,7 +1,8 @@
 import './App.css'
+import { useState } from 'react'
 
 export function Student({onSubmit}) { 
-  
+    
   return (
     <>
     <h2 id="addtext">ADD STUDENT</h2>
@@ -21,8 +22,9 @@ export function Student({onSubmit}) {
       <label for="course">Course:</label>
       <input type="text" id="course" name="course" />
     </div>
-    <div id="addbutton"><button id ="addbutton" type='submit'>ADD STUDENT</button></div>
+    <div id="addbutton"><button id ="addbutton"  type='submit'>ADD STUDENT</button></div>
   </form>
+  
 </div>
 </>
   );

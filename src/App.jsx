@@ -6,7 +6,7 @@ import { ViewStudents } from "./viewStudent";
 function App() {
  const [show, setShow] = useState(false);
 const [students, setStudents] = useState([]);
-  
+  const [count, setCount] = useState(0); 
 
   function handleSubmit(e) {
   e.preventDefault();
@@ -14,12 +14,21 @@ const [students, setStudents] = useState([]);
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData.entries());
   data.age = Number(data.age);
-
-    if (data.age > 18) {
-      setStudents([...students, data]);
-    } else {
-      alert("Age must be greater than 18");
+   if(data.name==''||data.course==''){
+      alert("All Field Are Required ")
     }
+   else if (data.age > 18) {
+  const newStudent = {
+    ...data,
+    id: Date.now()
+  };
+
+  setStudents(prev => [...prev, newStudent]);
+  setCount(prev => prev + 1);
+}
+    else {
+      alert("Age must be greater than 18");
+    } 
     e.target.reset();
 }
   return (<>
@@ -31,13 +40,16 @@ const [students, setStudents] = useState([]);
     <Student  onSubmit={handleSubmit} />
 
   </div>
+  <div>TOTAL STUDENT {students.length}</div>
 
   <div id="view">
-    <ViewStudents 
-     students={students}
-        show={show}
-        toggle={() => setShow(!show)}
-          />
+   <ViewStudents 
+  students={students}
+  setStudents={setStudents}
+  
+  show={show}
+  toggle={() => setShow(!show)}
+/>
 </div>
   <div id="manage"></div>
   </div>

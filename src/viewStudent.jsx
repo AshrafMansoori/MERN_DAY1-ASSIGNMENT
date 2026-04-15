@@ -1,5 +1,9 @@
 import './App.css'
-export function ViewStudents({ students, show, toggle }) {
+export function ViewStudents({ students, show, toggle,setStudents }) {
+ const deleteStudent = (id) => {
+  setStudents(students.filter(s => s.id !== id));
+  
+};
   return (
   <>
   <div id="view-text"><h1>VIEW STUDENT</h1>
@@ -12,11 +16,13 @@ export function ViewStudents({ students, show, toggle }) {
               <p>No students available</p>
             ) : (
               students.map((s, index) => (
-                <div className="data"key={index}>
+                <div className="data"key={s.id}>
                   
-                  <p>
-                  {s.name} ---- {s.age} ------ {s.course}
-                  </p>
+                  
+                 {index+1} .||{s.name} || {s.age} || {s.course} <button id="delete" onClick={() => deleteStudent(s.id)}>
+  delete
+</button>
+                  
                 </div>
               ))
             )}
