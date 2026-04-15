@@ -22,7 +22,7 @@ export function Student({onSubmit}) {
       <label for="course">Course:</label>
       <input type="text" id="course" name="course" />
     </div>
-    <div id="addbutton"><button id ="addbutton"  type='submit'>ADD STUDENT</button></div>
+    <div id="addbutton"><button id ="add-button"  type='submit'>ADD STUDENT</button></div>
   </form>
   
 </div>

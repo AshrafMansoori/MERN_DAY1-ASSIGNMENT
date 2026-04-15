@@ -34,7 +34,6 @@ body {
   margin: 10px auto;
   padding: 20px;
   padding-bottom: 20px;
-  
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -66,10 +65,16 @@ input {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#addbutton{
+#add-button{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(34, 169, 34);
+  color: white;
+   height: 45px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #view{
@@ -91,8 +96,10 @@ input {
   font-size: 20px;
 }
 #addbutton{
-   height: 45px;
-  font-size: 20px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .data{
   display: flex;
@@ -119,7 +126,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center; 
-   justify-content: center;
+  justify-content: center;
 
 }
 
