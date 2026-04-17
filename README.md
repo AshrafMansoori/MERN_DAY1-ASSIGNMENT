@@ -18,8 +18,13 @@ You can run this project directly from your browser without installing anything 
 **Option 1: Open in GitHub Codespaces**
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME)
 
-**Option 2: Open in Gitpod**
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME)
+## 🌐 Live Demo
+
+Click the link below to see the app running directly in your browser!
+[**👉 View the Live Output Here**](https://AshrafMansoori.github.io/MERN_DAY1-ASSIGNMENT)
+
+<img width="1792" height="902" alt="Screenshot 2026-04-17 232442" src="https://github.com/user-attachments/assets/78bfe217-88fb-4220-b7e4-2d3cf5d30de6" />
+
 
 ## 💻 Local Installation
 
