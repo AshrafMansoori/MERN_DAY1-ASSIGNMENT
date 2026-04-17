@@ -24,7 +24,7 @@ const [students, setStudents] = useState([]);
   };
 
   setStudents(prev => [...prev, newStudent]);
-  setCount(prev => prev + 1);
+  setCount(students.length());
 }
     else {
       alert("Age must be greater than 18");
@@ -40,7 +40,7 @@ const [students, setStudents] = useState([]);
     <Student  onSubmit={handleSubmit} />
 
   </div>
-  <div>TOTAL STUDENT {students.length}</div>
+  <div><h2>TOTAL STUDENT {students.length}</h2> </div>
 
   <div id="view">
    <ViewStudents 

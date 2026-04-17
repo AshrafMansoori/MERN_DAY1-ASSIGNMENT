@@ -5,21 +5,21 @@ export function Student({onSubmit}) {
     
   return (
     <>
-    <h2 id="addtext">ADD STUDENT</h2>
+    <h1 id="addtext">ADD STUDENT</h1>
  <div id="add">
   <form onSubmit={onSubmit}>
     <div>
-      <label for="name">NAME:</label>
+      <label htmlFor="name">NAME:</label>
       <input type="text" id="name" name="name" />
     </div>
 
     <div>
-      <label for="age">Age:</label>
+      <label htmlFor="age">Age:</label>
       <input type="number" id="age" name="age" min="0" />
     </div>
 
     <div>
-      <label for="course">Course:</label>
+      <label htmlFor="course">Course:</label>
       <input type="text" id="course" name="course" />
     </div>
     <div id="addbutton"><button id ="add-button"  type='submit'>ADD STUDENT</button></div>

@@ -7,7 +7,7 @@ export function ViewStudents({ students, show, toggle,setStudents }) {
   return (
   <>
   <div id="view-text"><h1>VIEW STUDENT</h1>
-    <button id="view-button" onClick={toggle} style={ {height: "30px"}}>
+    <button id="view-button" onClick={toggle}>
   View Students
 </button></div>
 {show && (
@@ -20,7 +20,7 @@ export function ViewStudents({ students, show, toggle,setStudents }) {
                   
                   
                  {index+1} .||{s.name} || {s.age} || {s.course} <button id="delete" onClick={() => deleteStudent(s.id)}>
-  delete
+  Delete
 </button>
                   
                 </div>
